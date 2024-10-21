@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de la Abuela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#foro">Foro</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda-login">
+            <input type="text" placeholder="Buscar recetas o consejos..." id="barraBusqueda">
+            <button>Buscar</button>
+        </div>
+        <div class="intro">
+            <h1>Foro de la Abuela</h1>
+            <p>Bienvenidos al rincón de las recetas y consejos medicinales tradicionales.</p>
+        </div>
+    </header>
+    <main>
+        <section id="formulario">
+            <form id="postForm">
+            </form>
+        </section>
+        <section id="foro">
+            <h2>Publicaciones de la Abuela:</h2>
+            <div id="publicaciones">
+                <!-- Las publicaciones aparecerán aquí -->
+            </div>
+        </section>
+        <section id="catalogo">
+            <h2>Catálogo de Recetas</h2>
+            <div class="recetas-vertical">
+                <div class="tarjeta-receta">
+                    <img src="data:image/jpeg;base64,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" alt="Imagen de receta 1" class="imagen-receta">
+                    
+
+                
+
+                    
+                    
+                    <h3>Postre De Tiramisu</h3>
+                    <p>
+                        <h2>Aquí tienes los pasos resumidos para hacer un tiramisú:</h2>
+                        
+                        <h3>Ingredientes:</h3>
+                        Bizcochos de soletilla (ladyfingers)
+                        250 g de queso mascarpone
+                        3 huevos (separando yemas y claras)
+                        100 g de azúcar
+                        Café frío (sin azúcar)
+                        Cacao en polvo
+                        <h3>Instrucciones:</h3>
+                        Preparar la crema: Bate las yemas con azúcar hasta que estén cremosas. Añade el mascarpone y mezcla bien. Bate las claras a punto de nieve y mézclalas suavemente con la crema.
+                        Montar las capas: Moja los bizcochos en café y colócalos en el molde. Cubre con una capa de crema. Repite hasta terminar.
+                        Enfriar: Refrigera al menos 3 horas.
+                        Servir: Espolvorea cacao en polvo antes de servir. ¡Listo!</p>
+
+                        <div class="estrellas" id="estrellas-1">
+                            <span class="estrella" data-valor="1">&#9733;</span>
+                            <span class="estrella" data-valor="2">&#9733;</span>
+                            <span class="estrella" data-valor="3">&#9733;</span>
+                            <span class="estrella" data-valor="4">&#9733;</span>
+                            <span class="estrella" data-valor="5">&#9734;</span> <!-- Estrella vacía -->
+                        </div>
+                        <p>Calificación 
+                </div>
+
+
+                </div>
+                <div class="tarjeta-estrellas">
+                    <img src="" alt="Imagen de receta 2" class="imagen-receta">
+                    <h3>Nombre de la receta 2</h3>
+                    <p>Descripción de la receta 2. Consejos de la abuela para preparar este platillo delicioso.</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Foro de la Abuela - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

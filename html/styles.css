@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+nav {
+    background-color: #d2691e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.busqueda-login {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.busqueda-login input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #d2691e;
+    border-radius: 5px;
+}
+
+.busqueda-login button {
+    padding: 10px;
+    background-color: #d2691e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.busqueda-login button:hover {
+    background-color: #a0522d;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffebcd;
+    border-bottom: 2px solid #d2691e;
+}
+
+#foro {
+    margin: 20px;
+}
+
+#publicaciones {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff8dc;
+    border-radius: 10px;
+    border: 1px solid #d2691e;
+}
+
+#catalogo {
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffe4c4;
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+}
+
+.recetas-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tarjeta-receta {
+    background-color: #fff8dc;
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-receta img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.estrellas {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.estrella {
+    font-size: 24px; /* Tamaño de las estrellas */
+    color: gold; /* Color de las estrellas llenas */
+    cursor: pointer; /* Cambiar cursor al pasar sobre las estrellas */
+}
+
+.estrella:hover {
+    color: orange; /* Color al pasar el cursor */
+}
+
+.tarjeta- img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto neón en la imagen al pasar el cursor */
+.tarjeta-receta img:hover {
+    box-shadow: 0 0 15px 5px rgba(218, 122, 13, 0.836); /* Color neón */
+    transform: scale(1.05); /* Pequeño aumento de tamaño */
+}
+
+.tarjeta-receta h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #d2691e;
+}
+
+.tarjeta-receta p {
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffebcd;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #d2691e;
+}
